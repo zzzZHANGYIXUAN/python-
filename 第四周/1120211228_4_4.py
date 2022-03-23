@@ -1,0 +1,12 @@
+#某个公司采用公用电话传递数据，数据是四位的整数，在传递过程中是加密的，加密规则如下：每位数字都加上5,然后用和除以10的余数代替该数字，再将第一位和第三位交换，第二位和第四位交换
+number=int(input("请输入您要加密的数字:"))
+number_1000=number//1000
+number_100=(number-number_1000*1000)//100
+number_10=(number-number_100*100-number_1000*1000)//10
+number_1=number%10
+select_1000=(number_10+5)%10
+select_100=(number_1+5)%10
+select_10=(number_1000+5)%10
+select_1=(number_100+5)%10
+selcet=select_1000*1000+select_100*100+select_10*10+select_1
+print("密码是："+str(selcet))
