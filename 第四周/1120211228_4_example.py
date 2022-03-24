@@ -57,6 +57,9 @@
 # print(password)
 
 # format()方法
-print("{}:计算机{}的cpu占有率为{}%。".format("2020-12-1","腾讯会议",20))
-print("{}:计算机{}的cpu占有率为{}%。".format("2021-5-5","PS",80))
-print("{}:计算机{}的cpu占有率为{}%。".format("2022-1-18","微信",20))
+dollar=eval(input("请输入美元数量："))
+rmb=dollar*6.868
+print("换算为人民币：{:.2f}".format(rmb))
+print("换算为人民币：{0:-^30}".format(rmb))
+print("换算为人民币：{0: ^30}".format(rmb))
+print("换算为人民币：{0:?^30}".format(rmb))
