@@ -1,0 +1,11 @@
+#编写程序，从键盘输入a,b,c的值，计算一元二次方程ax^2+bx+c=0的根，根据b^2−4ac的值大于0、等于0及小于0分别进行讨论
+a=int(input("请输入a的数值："))
+b=int(input("请输入b的数值："))
+c=int(input("请输入c的数值："))
+jugment=b*b-4*a*c
+if(jugment>0):
+    print("方程有两个不同的根")
+elif(jugment==0):
+    print("方程有两个相同的根")
+else:
+    print("方程没有根")
