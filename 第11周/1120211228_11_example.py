@@ -71,3 +71,50 @@
 #         print("不构成三角形")
 # a,b,c=eval(input("请输入三个数字"))
 # jugment(a,b,c)
+
+
+
+# 【例11-7】带默认参数的函数
+# 在定义函数时，有些参数可以存在默认值
+# def dup(s,times=2):
+#     print(s*times)
+# dup('knock~')
+# dup('knock~',4)
+#默认参数相当于是附带了一个初始的数值
+
+
+
+# 【例11-8】带可变数量参数的函数
+# 在函数定义时，可以设计可变数量参数，通过参数前增加星号（*）实现
+# def vfunc(a,*b):
+#     print(type(b))
+#     # 这里b的类型是元组
+#     # for函数相当于是遍历元组里的每个元素
+#     for n in b:
+#         a +=n
+#     return a
+# result=vfunc(1,2,3,4,5)
+# print(result)
+
+
+
+# 【例11-9】星座运势
+# 只要固定seed()函数中的参数，随机函数的结果也固定
+# import random
+# def jinriyunshi():
+#     star,year,month,day=input("请输入星座，年，月，日（逗号隔开）:\n").split(",")
+#     count = int(year)+int(month)+int(day)
+#     random.seed(count)
+#     a = random.randint(1,5)
+#     b = random.randint(1,5)
+#     c = random.randint(1,5)
+#     d = random.randint(1,5)
+#     e = random.randint(1,5)
+#     print("{0}的今日运势如下：".format(star))
+#     print("整体运势：{}".format(a))
+#     print("爱情运势：{}".format(b))
+#     print("事业运势：{}".format(c))
+#     print("财富运势：{}".format(d))
+#     print("健康运势：{}".format(e))
+# jinriyunshi()
+
